@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>LightVS — Compare</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="lv-header">
+    <h1>Compare</h1>
+    <nav><a class="link" href="./index.html">Back</a></nav>
+  </header>
+
+  <main class="compare-grid">
+    <section class="card">
+      <h2>Left</h2>
+      <pre id="leftContent" class="codeblock"></pre>
+    </section>
+    <section class="card">
+      <h2>Right</h2>
+      <pre id="rightContent" class="codeblock"></pre>
+      <div class="action-row">
+        <button id="resetBtn" class="btn secondary" disabled>Reset</button>
+        <button id="acceptMergeBtn" class="btn" disabled>Accept merge</button>
+      </div>
+      <div class="uploader-row">
+        <input id="rightUpload" type="file" />
+      </div>
+    </section>
+  </main>
+
+  <script src="./compare.js" type="module"></script>
+</body>
+</html>

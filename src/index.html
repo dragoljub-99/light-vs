@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>LightVS — Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="lv-header">
+    <div>
+      <h1>LightVS</h1>
+      <p>Light Versioning System</p>
+    </div>
+    <div>
+      <button id="aboutBtn" class="btn">About</button>
+    </div>
+  </header>
+
+  <main class="lv-main">
+    <a href="history.html" class="card link-card">
+      <div class="card-icon">🕘</div>
+      <div class="card-title">History</div>
+    </a>
+    <a href="compare.html" class="card link-card">
+      <div class="card-icon">🪄</div>
+      <div class="card-title">Compare</div>
+    </a>
+  </main>
+
+  <div id="aboutModal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-panel">
+      <h2>About</h2>
+      <p>...</p>
+      <button id="aboutClose" class="btn">Close</button>
+    </div>
+  </div>
+
+  <script src="./main.js" type="module"></script>
+</body>
+</html>

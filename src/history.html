@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>LightVS — History</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="lv-header">
+    <h1>History</h1>
+    <nav><a class="link" href="./index.html">Back</a></nav>
+  </header>
+
+  <main class="history-layout">
+    <aside class="history-list card">
+      <h2>Versions</h2>
+      <ul id="versionList" class="list"></ul>
+    </aside>
+
+    <section class="history-viewer card">
+      <div class="viewer-header">
+        <h2 id="viewerTitle">Select a version</h2>
+        <div id="viewerMeta" class="meta"></div>
+      </div>
+      <pre id="viewerContent" class="codeblock"></pre>
+    </section>
+
+    <section class="history-uploader card">
+      <h2>New Commit</h2>
+      <div class="uploader-row">
+        <input id="fileInput" type="file" />
+        <input id="messageInput" type="text" placeholder="Commit message" />
+        <button id="commitBtn" class="btn">Commit</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="./history.js" type="module"></script>
+</body>
+</html>
