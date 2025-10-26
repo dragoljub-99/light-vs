@@ -169,3 +169,7 @@ a { color: inherit; }
   background: #eaf2ff;
 }
 
+.line.same { background: #f2f2f7; }
+.line.insert, .line.inserted { background: #e7f8ee; }
+.line.delete, .line.deleted { background: #ffefef; }
+
