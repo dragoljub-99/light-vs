@@ -15,17 +15,21 @@
   <main class="compare-grid">
     <section class="card">
       <h2>Left</h2>
-      <div id="leftContent" class="codeblock content-column"></div>
+      <pre id="leftContent" class="codeblock content-column"></pre>
     </section>
     <section class="card">
       <h2>Right</h2>
-      <div id="rightContent" class="codeblock content-column"></div>
+      <pre id="rightContent" class="codeblock content-column"></pre>
       <div class="action-row">
         <button id="resetBtn" class="btn secondary" disabled>Reset</button>
         <button id="acceptMergeBtn" class="btn" disabled>Accept merge</button>
       </div>
       <div class="uploader-row">
         <input id="rightUpload" type="file" />
+      </div>
+      <div style="margin-top: .75rem;">
+        <h3 style="margin: 0 0 .25rem 0;">Merge Preview</h3>
+        <pre id="mergePreview" class="codeblock"></pre>
       </div>
     </section>
   </main>
