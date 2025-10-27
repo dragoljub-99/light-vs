@@ -15,11 +15,11 @@
   <main class="compare-grid">
     <section class="card">
       <h2>Left</h2>
-      <pre id="leftContent" class="codeblock content-column"></pre>
+      <div id="leftContent" class="codeblock content-column"></div>
     </section>
     <section class="card">
       <h2>Right</h2>
-      <pre id="rightContent" class="codeblock content-column"></pre>
+      <div id="rightContent" class="codeblock content-column"></div>
       <div class="action-row">
         <button id="resetBtn" class="btn secondary" disabled>Reset</button>
         <button id="acceptMergeBtn" class="btn" disabled>Accept merge</button>
@@ -30,6 +30,10 @@
       <div style="margin-top: .75rem;">
         <h3 style="margin: 0 0 .25rem 0;">Merge Preview</h3>
         <pre id="mergePreview" class="codeblock"></pre>
+      </div>
+      <div class="uploader-row" style="margin-top:.5rem;">
+        <input id="mergeMessage" type="text" placeholder="Commit message" style="flex:1;" />
+        <button id="commitMergeBtn" class="btn" disabled>Commit</button>
       </div>
     </section>
   </main>
