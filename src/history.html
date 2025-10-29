@@ -27,13 +27,20 @@
     </section>
 
     <section class="history-uploader card">
-      <h2>New Commit</h2>
-      <div class="uploader-row">
-        <input id="fileInput" type="file" />
-        <input id="messageInput" type="text" placeholder="Commit message" />
-        <button id="commitBtn" class="btn">Commit</button>
-      </div>
-    </section>
+  <h2>New Commit</h2>
+
+  <div class="history-commit-inner">
+    <div class="uploader-row file-row">
+      <input id="fileInput" type="file" />
+    </div>
+
+    <div class="uploader-row msg-row">
+      <input id="messageInput" type="text" placeholder="Commit message" />
+      <button id="commitBtn" class="btn" disabled>Commit</button>
+    </div>
+  </div>
+</section>
+
   </main>
 
   <script src="./history.js" type="module"></script>

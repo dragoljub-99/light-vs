@@ -194,3 +194,42 @@ a { color: inherit; }
   border-radius: 10px;
 }
 .btn.ghost:hover { background: #eef2ff; }
+
+.history-commit-inner {
+  max-width: 640px;
+  margin: 0.25rem auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.uploader-row.file-row input[type="file"] {
+  width: 100%;
+}
+
+.uploader-row.msg-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.uploader-row.msg-row input[type="text"] {
+  width: 100%;
+  height: 40px;
+  padding: 0 0.75rem;
+}
+
+.uploader-row.msg-row .btn {
+  height: 40px;
+  padding: 0 0.9rem;
+}
+
+@media (max-width: 640px) {
+  .uploader-row.msg-row {
+    grid-template-columns: 1fr;
+  }
+  .uploader-row.msg-row .btn {
+    width: 100%;
+  }
+}
