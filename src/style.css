@@ -233,3 +233,33 @@ a { color: inherit; }
     width: 100%;
   }
 }
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 1rem; 
+  display: grid;
+  gap: 0.5rem;
+}
+
+
+.about-desc {
+  margin-top: 0.5rem;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.about-list a,
+.about-desc a {
+  text-decoration: underline;
+}
+
+#aboutClose { margin-top: 1rem; }
+
+

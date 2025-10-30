@@ -29,13 +29,24 @@
   </main>
 
   <div id="aboutModal" class="modal" aria-hidden="true">
-    <div class="modal-backdrop"></div>
-    <div class="modal-panel">
-      <h2>About</h2>
-      <p>...</p>
-      <button id="aboutClose" class="btn">Close</button>
+  <div class="modal-backdrop"></div>
+  <div class="modal-panel">
+    <h2>About</h2>
+
+    <div class="about-desc">
+      <p id="aboutText">GitHub-inspired light versioning application developed in plain JavaScript, HTML, and CSS. It uses LocalStorage for storing and tracking changes.</p>
     </div>
+
+    <ul class="about-list">
+      <li><strong>Autor:</strong> Dragoljub Danojlić</li>
+      <li><strong>Email:</strong> <a class="link" href="mailto:dragoljubdanojlic@icloud.com?subject=LightVS">dragoljubdanojlic@icloud.com</a></li>
+      <li><strong>LinkedIn:</strong> <a class="link" href="https://www.linkedin.com/in/dragoljub-danojlic-213265303/" target="_blank" rel="noopener noreferrer">linkedin.com/in/dragoljub-danojlic-213265303/</a></li>
+    </ul>
+
+    <button id="aboutClose" class="btn">Close</button>
   </div>
+</div>
+
 
   <script src="./main.js" type="module"></script>
 </body>
